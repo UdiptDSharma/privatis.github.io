@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>NHS Number</label>
+                            <input type="text" placeholder="Enter your NHS Number (optional)">
+                        </div>
+                    </div>
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Appointment Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Date of Appointment</label>
+                            <input type="date" placeholder="Enter appointment date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Doctor</label>
+                            <select required>
+                                <option disabled selected>Select consultant</option>
+                                <option>Dr. L Ahmed</option>
+                                <option>Dr. C. K. Lewis</option>
+                                <option>Mr. K. Raju</option>
+                                <option>Unsure</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Time of Day</label>
+                            <select required>
+                                <option disabled selected>Select appointment hours</option>
+                                <option>Morning</option>
+                                <option>Afternoon</option>
+                                <option>Either</option>
+                            </select>
+                        </div>
+
+                        <!-- <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter your district" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Block Number</label>
+                            <input type="number" placeholder="Enter block number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" placeholder="Enter ward number" required>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Reason for Consultation</span>
+
+                    <div class="fields">
+                        <div class="longfield">
+                            <label>Description of Complaint</label>
+                            <input type="text" placeholder="Briefly describe reason for consultation" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+
+                    <!-- <div class="thanks">
+                        <h1>Thank you</br> Your booking has been completed</h1>
+                        <h2>You will shortly receive an email confirmation</h2>
+                    </div> -->
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
